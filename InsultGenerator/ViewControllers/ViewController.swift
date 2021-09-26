@@ -9,11 +9,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var insultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        fetchInsultGenerate()
+        
     }
 
+    @IBAction func generateInsultPressed() {
+        fetchInsultGenerate()
+    }
+}
 
+extension ViewController{
+    func fetchInsultGenerate() {
+        guard let url = URL(string: "https://evilinsult.com/generate_insult.php?lang=en&type=json") else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            do {
+                let insult = try JSONDecoder().decode(Insults.self, from: data)
+                DispatchQueue.main.async {
+                    self.insultLabel.text = String(insult.insults ?? "")
+                }
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
 }
 

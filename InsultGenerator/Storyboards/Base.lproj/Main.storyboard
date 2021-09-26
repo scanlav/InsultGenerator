@@ -37,6 +37,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="5"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generateInsultPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="0qz-Pe-FuJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +52,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hAN-hu-qEl" secondAttribute="trailing" constant="16" id="w8g-Dc-jZK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="insultLabel" destination="hAN-hu-qEl" id="sxU-Lt-ev7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
