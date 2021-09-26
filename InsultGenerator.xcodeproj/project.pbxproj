@@ -12,7 +12,7 @@
 		421C9CC92700B543007EBBA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C9CC82700B543007EBBA0 /* ViewController.swift */; };
 		421C9CCC2700B543007EBBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421C9CCA2700B543007EBBA0 /* Main.storyboard */; };
 		421C9CCE2700B544007EBBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421C9CCD2700B544007EBBA0 /* Assets.xcassets */; };
-		421C9CDF2700F1DC007EBBA0 /* Insult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C9CDE2700F1DC007EBBA0 /* Insult.swift */; };
+		421C9CDF2700F1DC007EBBA0 /* Insults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421C9CDE2700F1DC007EBBA0 /* Insults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		421C9CCB2700B543007EBBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		421C9CCD2700B544007EBBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421C9CD22700B544007EBBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		421C9CDE2700F1DC007EBBA0 /* Insult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insult.swift; sourceTree = "<group>"; };
+		421C9CDE2700F1DC007EBBA0 /* Insults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		421C9CDB2700E870007EBBA0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				421C9CDE2700F1DC007EBBA0 /* Insult.swift */,
+				421C9CDE2700F1DC007EBBA0 /* Insults.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				421C9CC92700B543007EBBA0 /* ViewController.swift in Sources */,
-				421C9CDF2700F1DC007EBBA0 /* Insult.swift in Sources */,
+				421C9CDF2700F1DC007EBBA0 /* Insults.swift in Sources */,
 				421C9CC52700B543007EBBA0 /* AppDelegate.swift in Sources */,
 				421C9CC72700B543007EBBA0 /* SceneDelegate.swift in Sources */,
 			);
