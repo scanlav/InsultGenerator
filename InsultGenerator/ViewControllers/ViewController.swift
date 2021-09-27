@@ -32,9 +32,9 @@ extension ViewController{
                 return
             }
             do {
-                let insult = try JSONDecoder().decode(Insults.self, from: data)
+                let insult = try JSONDecoder().decode(Insult.self, from: data)
                 DispatchQueue.main.async {
-                    self.insultLabel.text = String(insult.insults ?? "")
+                    self.insultLabel.text = String(insult.insult ?? "")
                 }
             } catch let error {
                 print(error.localizedDescription)
